@@ -49,7 +49,7 @@ function getReceipt(items) {
     }
     if (!error) {
       money += item.count * item.price;
-      receipt += `名称：${item.name}，数量：${item.count}瓶，单价：${item.price}.00(元)，小计：${item.price*item.count}.00(元)` + "\n";
+      receipt += `名称：${item.name}，数量：${item.count}${item.unit}，单价：${item.price}.00(元)，小计：${item.price*item.count}.00(元)` + "\n";
     }
   });
   if (!error) {
